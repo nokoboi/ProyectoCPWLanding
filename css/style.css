@@ -1,0 +1,70 @@
+:root{
+    /*Definimos los colores, root sirve para declarar variables en css*/
+    --white: #FFFFFF;
+    --dark: #2b2b2b;
+    --primary: #52EF4D;
+    --secondary: #FEE914;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: var();
+}
+
+header h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+header h1 span{
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/*
+body{
+    margin: 0px;
+    text-align: center;
+    background-color: #f8efcf;
+}
+
+nav{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1em;    
+}
+
+a:hover{
+    background-color: red;
+}
+
+#Servicios{
+    display: flex;
+    justify-content: center;
+    background-color: #fce79d;
+    padding: 1rem;
+}
+
+#Servicios p{
+    padding: 1rem;
+    text-align: justify;
+}
+
+#Servicios img{
+    width: 100px;
+}
+*/
+
