@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
     <!--estilos css-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
     <!--enlace a la tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,70 +20,77 @@
 <body>
     <header>
         <h1>Kevin Sánchez. <span>Full Stack Developer</span></h1>
-        <nav id="navegador">
+        <nav class="navegador">
             <a href="#">Inicio</a>
             <a href="#">Sobre mí</a>
             <a href="#">Trabajos</a>
             <a href="#">Contacto</a>
         </nav>
-
-        <section>
-            <h2>Diseño y Desarrollo Web</h2>
-            <img src="img/location.svg" alt="icono de localizacion">
-            <p>Las Gabias, Granada</p>
-            <button type="submit">Contacto</button>
-        </section>
+        <div class="banner">
+            <section class="sectionBanner">
+                <h2>Diseño y Desarrollo Web</h2>
+                <p>
+                    <img src="img/location.svg" alt="icono de localizacion">
+                    Las Gabias, Granada
+                </p>
+                <button class="boton" type="submit">Contacto</button>
+            </section>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Servicios</h2>
-            <div id="Servicios">
-                <section>
-                    <h3>Diseño Web</h3>
-                    <img src="img/brand-css3.svg" alt="logo de css">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, est ipsa. Est, deserunt
-                        assumenda officia veritatis eos illum minima, officiis harum voluptatum aliquid omnis numquam
-                        rem reiciendis iure voluptates repudiandae.</p>
-                </section>
-                <section>
-                    <h3>Aplicaciones Web</h3>
-                    <img src="img/brand-html5.svg" alt="logo de html">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dolore cum veritatis doloribus
-                        labore eius placeat dolor voluptatibus saepe ea, ut, et aspernatur nesciunt eos ad porro
-                        voluptate. Ab, adipisci?</p>
-                </section>
-                <section>
-                    <h3>Multiplataforma</h3>
-                    <img src="img/device-imac.svg" alt="logo pc">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam impedit recusandae culpa ipsa
-                        dolorum pariatur quos illo iure quidem quae voluptatibus optio saepe rerum debitis sequi
-                        officia, soluta facere eos.</p>
-                </section>
-            </div>
-        </section>
+        <div class="container">
+            <section>
+                <h2>Servicios</h2>
+                <div class="secciones">
+                    <section>
+                        <h3>Diseño Web</h3>
+                        <img src="img/brand-css3.svg" alt="logo de css">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, est ipsa. Est, deserunt
+                            assumenda officia veritatis eos illum minima, officiis harum voluptatum aliquid omnis numquam
+                            rem reiciendis iure voluptates repudiandae.</p>
+                    </section>
+                    <section>
+                        <h3>Aplicaciones Web</h3>
+                        <img src="img/brand-html5.svg" alt="logo de html">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dolore cum veritatis doloribus
+                            labore eius placeat dolor voluptatibus saepe ea, ut, et aspernatur nesciunt eos ad porro
+                            voluptate. Ab, adipisci?</p>
+                    </section>
+                    <section>
+                        <h3>Multiplataforma</h3>
+                        <img src="img/device-imac.svg" alt="logo pc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam impedit recusandae culpa ipsa
+                            dolorum pariatur quos illo iure quidem quae voluptatibus optio saepe rerum debitis sequi
+                            officia, soluta facere eos.</p>
+                    </section>
+                </div>
+                
 
-        <section>
-            <h2>Contacto</h2>
-            <form action="">
-                <fieldset>
-                    <legend>Contacta conmigo</legend>
-                    <label>Nombre </label>
-                    <input type="text" placeholder="Escribe tu nombre">
+            </section>
 
-                    <label>Telefono</label>
-                    <input type="text" placeholder="Teléfono">
+            <section>
+                <h2>Contacto</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Contacta conmigo</legend>
+                        <label>Nombre </label>
+                        <input type="text" placeholder="Escribe tu nombre">
 
-                    <label>Email</label>
-                    <input type="email" name="" id="" placeholder="email">
+                        <label>Telefono</label>
+                        <input type="text" placeholder="Teléfono">
 
-                    <label>Escribe tu comentario</label>
-                    <textarea name="" id=""></textarea>
+                        <label>Email</label>
+                        <input type="email" name="" id="" placeholder="email">
 
-                    <input type="submit" value="Enviar">
-                </fieldset>
-            </form>
-        </section>
+                        <label>Escribe tu comentario</label>
+                        <textarea name="" id=""></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>© Todos los derechos reservados. Kevin Sánchez</p>
