@@ -11,6 +11,10 @@
 html {
     font-size: 62.5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+*{
     box-sizing: border-box;
 }
 
@@ -106,6 +110,7 @@ header h1 span {
         padding: 1rem;
         font-size: 1.2rem;
     }
+
 }
 
 .container {
@@ -118,7 +123,11 @@ header h1 span {
     -moz-box-shadow: 10px 10px 24px 0px rgba(255, 255, 255, 0.42);
     box-shadow: 10px 10px 24px 0px rgba(255, 255, 255, 0.42);
     margin:1rem;
-    
+    text-align: center;    
+}
+
+.container section>h2{
+    font-size: 2.5rem;
 }
 
 .secciones{
@@ -130,6 +139,9 @@ header h1 span {
 
 .secciones img{
     width: 100px;
+    background-color: lightgray;
+    border-radius: 43%;    
+    padding: 2rem;
 }
 
 .secciones section>p{
@@ -144,16 +156,37 @@ header h1 span {
         margin-top: 1.5rem;
     }
 
+    .secciones{
+        flex-direction: row;
+    }
 }
 
-.container h2{
-    text-align: center;
+@media(max-width: 760px){
+    .secciones{
+        flex-direction: column;
+    }
 }
 
-footer{
-    color: var(--white);
-    text-align: center;
+.formulario{
+    background-color: var(--dark);
+    border-radius: 1rem;
+    width: min(80rem, 100%); /*Ancho minimo de 80rem o 100%*/
+    margin: 0 auto;
+    padding: 1rem;
 }
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
 
 /*
 body{
