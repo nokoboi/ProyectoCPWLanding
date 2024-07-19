@@ -11,10 +11,10 @@
 html {
     font-size: 62.5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -87,7 +87,6 @@ header h1 span {
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
-
 }
 
 .boton:hover {
@@ -122,64 +121,65 @@ header h1 span {
     -webkit-box-shadow: 10px 10px 24px 0px rgba(255, 255, 255, 0.42);
     -moz-box-shadow: 10px 10px 24px 0px rgba(255, 255, 255, 0.42);
     box-shadow: 10px 10px 24px 0px rgba(255, 255, 255, 0.42);
-    margin:1rem;
-    text-align: center;    
+    margin: 1rem;
+    text-align: center;
 }
 
-.container section>h2{
+.container section>h2 {
     font-size: 2.5rem;
 }
 
-.secciones{
+.secciones {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.secciones img{
+.secciones img {
     width: 100px;
     background-color: lightgray;
-    border-radius: 43%;    
+    border-radius: 43%;
     padding: 2rem;
 }
 
-.secciones section>p{
+.secciones section>p {
     text-align: justify;
     padding: 1em;
 }
 
-@media(min-width:1200px){
-    .container{
+@media(min-width:1200px) {
+    .container {
         width: 75%;
-        margin:auto;
+        margin: auto;
         margin-top: 1.5rem;
     }
 
-    .secciones{
+    .secciones {
         flex-direction: row;
     }
 }
 
-@media(max-width: 760px){
-    .secciones{
+@media(max-width: 760px) {
+    .secciones {
         flex-direction: column;
     }
 }
 
-.formulario{
+.formulario {
     background-color: var(--dark);
     border-radius: 1rem;
-    width: min(80rem, 100%); /*Ancho minimo de 80rem o 100%*/
+    width: min(80rem, 100%);
+    /*Ancho minimo de 80rem o 100%*/
     margin: 0 auto;
     padding: 1rem;
 }
 
-.formulario fieldset{
+.formulario fieldset {
     border: none;
 }
 
-.formulario legend{
+.formulario legend {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--secondary);
@@ -187,6 +187,93 @@ header h1 span {
     text-transform: uppercase;
 }
 
+.containerInput {
+    margin-bottom: 1rem;
+}
+
+.containerInput label {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.containerInput input,
+.containerInput textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    resize: none;
+}
+
+.containerInput textarea {
+    height: 10rem;
+}
+
+.botonForm {
+    background-color: var(--secondary);
+    border: none;
+    color: var(--dark);
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0.5em 0.25em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+@media(min-width: 760px) {
+
+    /* Un grid con una fila y dos columnas y dos filas con 1 columna */
+    .inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-gap: 1rem;
+
+    }
+
+    .inputs :nth-child(3) {
+        grid-column: 1/-1;
+    }
+
+    .inputs :nth-child(4) {
+        grid-column: 1/-1;
+    }
+
+    .botonForm {
+        width: 10%;
+        display: block;
+        background-color: var(--secondary);
+        border: none;
+        color: var(--dark);
+        padding: 1em 1em;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 0.5em 0.25em;
+        cursor: pointer;
+        border-radius: 12px;
+        transition-duration: 0.4s;
+    }
+
+    .botonForm:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid var(--secondary);
+    }
+}
+
+footer{
+    color: var(--white);
+    text-align: center;
+    margin-top: 1.5rem;
+}
 
 /*
 body{
