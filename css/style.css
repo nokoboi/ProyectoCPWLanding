@@ -59,7 +59,7 @@ header h1 span {
     color: var();
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 400px;
 }
 
 .sectionBanner {
@@ -101,7 +101,6 @@ header h1 span {
 .boton:hover {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50;
 }
 
 @media(max-width: 500px) {
@@ -116,7 +115,10 @@ header h1 span {
 
     .navegador a {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        border-bottom: solid white 1px;
+        text-align: center;
+        width: 100%;
     }
 
 }
@@ -280,7 +282,6 @@ header h1 span {
     .botonForm:hover {
         background-color: white;
         color: black;
-        border: 1px solid var(--secondary);
     }
 }
 
