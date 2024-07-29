@@ -44,7 +44,7 @@ header h1 span {
 .navegador a {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     height: 100%;
     padding: 1rem;
 
@@ -183,6 +183,58 @@ header h1 span {
     .secciones {
         flex-direction: column;
     }
+}
+
+.favorites {
+    padding: 4rem 0;
+    font-size: 1.4rem;
+}
+
+.favorites a{
+    text-decoration: none;
+    color: black;
+}
+
+.favorites h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.contenedor-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.textoCard{
+    padding: 1rem;
+
 }
 
 .formulario {
